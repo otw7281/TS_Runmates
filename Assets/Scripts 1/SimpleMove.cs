@@ -54,7 +54,6 @@ public class SimpleMove : MonoBehaviour
         //P = p0 + vt(방향,길이)(시간)
         //transform.position = transform.position + dir * speed * Time.deltaTime;  //상수
         controller.Move(dir * speed * Time.deltaTime);
-        //transform.position += dir;
-        //transform.Translate (dir * speed * Time.deltaTime);
+     
     }
 }
