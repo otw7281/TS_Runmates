@@ -624,7 +624,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -150, y: -50}
+  m_AnchoredPosition: {x: -200, y: -50}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &369382035
@@ -647,7 +647,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Coin : '
+  m_text: 'Coin: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -863,7 +863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ec02843dbb7ac14182395d5d9a46cbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 10
+  gameTime: 60
   timerText: {fileID: 719799514}
   gameOverPanel: {fileID: 1852037160}
 --- !u!4 &536507735
@@ -1254,6 +1254,71 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 650800714}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &678006815
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 378777771114393048, guid: c610059174caaaa42868b6f5380acf42, type: 3}
+      propertyPath: coin
+      value: 
+      objectReference: {fileID: 369382035}
+    - target: {fileID: 378777771114393048, guid: c610059174caaaa42868b6f5380acf42, type: 3}
+      propertyPath: coinText
+      value: 
+      objectReference: {fileID: 369382035}
+    - target: {fileID: 1473098199951161132, guid: c610059174caaaa42868b6f5380acf42, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473098199951161132, guid: c610059174caaaa42868b6f5380acf42, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473098199951161132, guid: c610059174caaaa42868b6f5380acf42, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473098199951161132, guid: c610059174caaaa42868b6f5380acf42, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.65748996
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473098199951161132, guid: c610059174caaaa42868b6f5380acf42, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.2602056
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473098199951161132, guid: c610059174caaaa42868b6f5380acf42, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.2602057
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473098199951161132, guid: c610059174caaaa42868b6f5380acf42, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.65748996
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473098199951161132, guid: c610059174caaaa42868b6f5380acf42, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473098199951161132, guid: c610059174caaaa42868b6f5380acf42, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 43.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473098199951161132, guid: c610059174caaaa42868b6f5380acf42, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468150978181055484, guid: c610059174caaaa42868b6f5380acf42, type: 3}
+      propertyPath: m_Name
+      value: Coin (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c610059174caaaa42868b6f5380acf42, type: 3}
 --- !u!1 &719799512
 GameObject:
   m_ObjectHideFlags: 0
@@ -2940,6 +3005,10 @@ PrefabInstance:
       propertyPath: coin
       value: 
       objectReference: {fileID: 369382035}
+    - target: {fileID: 378777771114393048, guid: c610059174caaaa42868b6f5380acf42, type: 3}
+      propertyPath: coinText
+      value: 
+      objectReference: {fileID: 369382035}
     - target: {fileID: 1473098199951161132, guid: c610059174caaaa42868b6f5380acf42, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.16
@@ -3002,6 +3071,7 @@ SceneRoots:
   - {fileID: 145986384}
   - {fileID: 1342306916}
   - {fileID: 314079279370187595}
+  - {fileID: 678006815}
   - {fileID: 587453814}
   - {fileID: 1444961831}
   - {fileID: 536507735}
