@@ -36,10 +36,11 @@ public class HeartItem : MonoBehaviour
     private void CollectHeart(GameObject player)
     {
         PlayerHealthUI playerHealthUI = player.GetComponent<PlayerHealthUI>();
+        PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
 
-        if(playerHealthUI != null)
+        if (playerHealth != null)
         {
-            playerHealthUI.AddLife();
+            playerHealth.AddLife();
             Debug.Log("하트 수집! 목숨 회복");
 
             DestroyHeart();
