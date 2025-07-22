@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -19,11 +21,39 @@ public class PlayerHealth : MonoBehaviour
     public float fallThresholdY = -10f;  // Y°¡ ÀÌ °ªº¸´Ù ³·À¸¸é ¸®½ºÆù
     public Vector3 respawnPosition = new Vector3(2.5f, 4f, -3f);
 
+    [Header("UI ¿¬°á")]
+    public Slider healthSlider;
+    public Transform heartContainer;
+    public GameObject heartImagePrefab;
+
+    private List<GameObject> heartImages = new List<GameObject>();
+
     private void Start()
     {
         currentHealth = maxHealth;
         currentLives = maxLives;
+
+        CreateInitialHearts();
+        UpdateHealthSlider();
     }
+
+    private void CreateInitialHearts()
+    {
+        for (int i = 0; i < maxLives; i++)
+        {
+            GameObject heart = Instantiate(heartImagePrefab, heartContainer);
+            heartImages.Add(heart);
+        }
+    }
+
+    private void UpdateHealthSlider()
+    {
+        if (healthSlider != null)
+        {
+            healthSlider.value = (float)currentHealth / maxHealth;
+        }
+    }
+
 
     private void Update()
     {
@@ -52,24 +82,54 @@ public class PlayerHealth : MonoBehaviour
         {
             TakeLife();
             Respawn();
+            currentHealth = maxHealth;
         }
 
+        UpdateHealthSlider();
         StartCoroutine(InvincibilityCoroutine());
         Debug.Log($"ÇÇÇØ! Ã¼·Â: {currentHealth}, ¸ñ¼û: {currentLives}");
     }
 
-    private void TakeLife()
-    {
-        currentLives--;
-        currentHealth = maxHealth;
 
-        if (currentLives <= 0)
+    public void AddLife()
+    {
+        if (currentLives < maxLives)
         {
-            GameOver();
+            currentLives++;
+
+            GameObject newHeart = Instantiate(heartImagePrefab, heartContainer);
+            heartImages.Add(newHeart);
+
+            Debug.Log($"¸ñ¼û È¸º¹! ÇöÀç ¸ñ¼û : {currentLives}");
         }
         else
         {
-            Debug.Log($"¸ñ¼û ÇÏ³ª ÀÒÀ½. ³²Àº ¸ñ¼û: {currentLives}");
+            Debug.Log("¸ñ¼ûÀÌ ÀÌ¹Ì ÃÖ´ë ÀÔ´Ï´Ù.");
+        }
+    }
+
+
+    private void TakeLife()
+    {
+        if (currentLives > 0)
+        {
+            currentLives--;
+
+            if (heartImages.Count > 0)
+            {
+                GameObject lastHeart = heartImages[heartImages.Count - 1];
+                heartImages.RemoveAt(heartImages.Count - 1);
+                Destroy(lastHeart);
+            }
+
+            if (currentLives <= 0)
+            {
+                GameOver();
+            }
+            else
+            {
+                Debug.Log($"¸ñ¼û ÇÏ³ª ÀÒÀ½. ³²Àº ¸ñ¼û: {currentLives}");
+            }
         }
     }
 
