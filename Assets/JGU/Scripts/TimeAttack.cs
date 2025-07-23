@@ -47,7 +47,7 @@ public class TimeAttack : MonoBehaviour
         }
     }
 
-    private void ShowGameOver()
+    public void ShowGameOver()
     {
         gameEnded = true;
         timerText.text = "00:00";

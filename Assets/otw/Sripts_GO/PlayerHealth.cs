@@ -28,6 +28,8 @@ public class PlayerHealth : MonoBehaviour
 
     private List<GameObject> heartImages = new List<GameObject>();
 
+    public TimeAttack timeAttack;
+
     private void Start()
     {
         currentHealth = maxHealth;
@@ -58,10 +60,9 @@ public class PlayerHealth : MonoBehaviour
     private void Update()
     {
         // ³«»ç Ã¼Å©
-        if (transform.position.y < fallThresholdY)
+        if (transform.position.y < fallThresholdY && !isInvincible)
         {
-            Respawn();
-            TakeLife();
+            FallDeath();
         }
     }
 
@@ -81,7 +82,6 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             TakeLife();
-            Respawn();
             currentHealth = maxHealth;
         }
 
@@ -90,6 +90,20 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log($"ÇÇÇØ! Ã¼·Â: {currentHealth}, ¸ñ¼û: {currentLives}");
     }
 
+    // ¶³¾îÁ³À» ¶§(³«»ç)
+    private void FallDeath()
+    {
+        Debug.Log("³«»ç");
+
+        TakeLife();
+
+        currentHealth = maxHealth;
+        UpdateHealthSlider();
+
+        Respawn();
+
+        StartCoroutine(InvincibilityCoroutine());
+    }
 
     public void AddLife()
     {
@@ -122,13 +136,11 @@ public class PlayerHealth : MonoBehaviour
                 Destroy(lastHeart);
             }
 
+            Debug.Log($"¸ñ¼û ÇÏ³ª ÀÒÀ½. ³²Àº ¸ñ¼û: {currentLives}");
+
             if (currentLives <= 0)
             {
                 GameOver();
-            }
-            else
-            {
-                Debug.Log($"¸ñ¼û ÇÏ³ª ÀÒÀ½. ³²Àº ¸ñ¼û: {currentLives}");
             }
         }
     }
@@ -143,6 +155,7 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("°ÔÀÓ ¿À¹ö!");
         // ¿©±â¿¡ °ÔÀÓ Á¾·á Ã³¸® Ãß°¡ °¡´É
+        timeAttack.ShowGameOver();
         Time.timeScale = 0f;
     }
 
