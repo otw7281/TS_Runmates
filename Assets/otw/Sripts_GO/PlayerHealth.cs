@@ -147,8 +147,21 @@ public class PlayerHealth : MonoBehaviour
 
     private void Respawn()
     {
-        transform.position = respawnPosition;
-        Debug.Log("플레이어 리스폰됨");
+        CharacterController cc = GetComponent<CharacterController>();
+        if (cc != null)
+        {
+            cc.enabled = false;
+            transform.position = respawnPosition;
+            cc.enabled = true;
+        }
+        else
+        {
+            transform.position = respawnPosition;
+        }
+
+        Debug.Log($"리스폰 전 : {transform.position}");
+        Debug.Log($"리스폰 목표 : {respawnPosition}");
+        Debug.Log($"리스폰 후 : {transform.position}");
     }
 
     private void GameOver()
