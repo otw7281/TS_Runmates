@@ -3772,7 +3772,7 @@ MonoBehaviour:
   maxLives: 5
   currentLives: 5
   invincibilityDuration: 2
-  fallThresholdY: -10
+  fallThresholdY: -3
   respawnPosition: {x: 2.5, y: 4, z: -3}
   healthSlider: {fileID: 5227707217034642118}
   heartContainer: {fileID: 8702087884821338063}
