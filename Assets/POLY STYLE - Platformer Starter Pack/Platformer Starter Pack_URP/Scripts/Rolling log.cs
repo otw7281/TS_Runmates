@@ -3,17 +3,22 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody), typeof(MeshCollider))]
 public class RollingLog : MonoBehaviour
 {
-    [Header("±¼·¯°¡´Â Èû")]
-    public float rollForce = 20f;
+    [Header("êµ´ëŸ¬ê°€ëŠ” í˜")]
+    public float rollForce = 10f;
 
-    [Header("¸®¼Â ´ë±â ½Ã°£")]
+    [Header("ì •ì§€ í›„ ë¦¬ì…‹ê¹Œì§€ ëŒ€ê¸° ì‹œê°„")]
     public float resetDelay = 3f;
+
+    [Header("ì •ì§€ë¡œ íŒë‹¨í•  ì†ë„ ê¸°ì¤€")]
+    public float stopThreshold = 0.05f;
 
     private Rigidbody rb;
     private Vector3 startPosition;
     private Quaternion startRotation;
 
     private bool hasRolled = false;
+    private float stopTimer = 0f;
+    private bool isRolling = false;
 
     void Start()
     {
@@ -24,7 +29,6 @@ public class RollingLog : MonoBehaviour
         rb.useGravity = true;
         rb.isKinematic = false;
 
-        // MeshCollider´Â Convex ²À Ã¼Å©!
         MeshCollider meshCol = GetComponent<MeshCollider>();
         meshCol.convex = true;
     }
@@ -35,16 +39,36 @@ public class RollingLog : MonoBehaviour
         {
             hasRolled = true;
             Roll();
-            Invoke(nameof(ResetLog), resetDelay);
         }
     }
 
+    private void FixedUpdate()
+    {
+        if (hasRolled)
+        {
+            // ì†ë„ê°€ stopThreshold ì´í•˜ë¼ë©´ ë©ˆì¶˜ ê²ƒìœ¼ë¡œ ê°„ì£¼
+            if (rb.linearVelocity.magnitude < stopThreshold)
+            {
+                stopTimer += Time.fixedDeltaTime;
+
+                if (stopTimer >= resetDelay)
+                {
+                    ResetLog();
+                }
+            }
+            else
+            {
+                // ë‹¤ì‹œ ì›€ì§ì´ë©´ íƒ€ì´ë¨¸ ì´ˆê¸°í™”
+                stopTimer = 0f;
+            }
+        }
+    }
     private void Roll()
     {
         rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
 
-        // XÃà ¹æÇâÀ¸·Î Èû °¡ÇÏ±â
+        // Xì¶• ë°©í–¥ìœ¼ë¡œ í˜ ê°€í•˜ê¸°
         rb.AddForce(Vector3.right * rollForce, ForceMode.Impulse);
     }
 
@@ -57,11 +81,12 @@ public class RollingLog : MonoBehaviour
         transform.rotation = startRotation;
 
         hasRolled = false;
+        stopTimer = 0f;
     }
 
 
-// Update is called once per frame
-void Update()
+    // Update is called once per frame
+    void Update()
     {
         
     }

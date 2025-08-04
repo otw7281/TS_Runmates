@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
@@ -8,8 +9,15 @@ public class PlayerMove : MonoBehaviour
     public float jumpPower = 3f;                    
     public bool isGrounded = false;                 
     public float gravity = -9.8f;                   
-    public float yVelocity = 0f;                    
+    public float yVelocity = 0f;
 
+    public void ForceJump(float force)
+    {
+        if (characterController.isGrounded)
+        {
+            yVelocity = force;
+        }
+    }
 
     CharacterController characterController;
 
@@ -47,5 +55,10 @@ public class PlayerMove : MonoBehaviour
         dir.y = yVelocity;
 
         characterController.Move(dir * speed * Time.deltaTime);
+    }
+
+    internal object SetJumpVelocity(float jumpPower)
+    {
+        throw new NotImplementedException();
     }
 }

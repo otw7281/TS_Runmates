@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
-
-public class Player_move : MonoBehaviour
+//내가 지정한 방향으로 이동하고 싶다.
+//포지션의 값이 바뀐다.
+public class SimpleMove : MonoBehaviour
 {
     // string : "내용" , int : 정수 (소수점 x )
     // float : 실수 (소수점o), Vector3 : 벡터 (x,y,z)
     public Vector3 dir = new Vector3(0, 0, 1);
-    public float speed = 5f; // m/s
+    public float speed = 1f; // m/s
 
     public float jumpPower = 5f; //점프(수직) 힘
     public bool isGrounded = false;  // boolean : true (1), false(0)
@@ -13,6 +14,12 @@ public class Player_move : MonoBehaviour
     public float yVelocity = 0; // y의 변화
 
     CharacterController controller;    //변수 선언 : 빈그릇
+
+    public void SetJumpVelocity(float power)
+    {
+        yVelocity = power;
+        isGrounded = false;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
