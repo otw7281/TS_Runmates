@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2884bba4905c3b847a485d4ac6b8ae94
+guid: c18ca74eb5a591d49bea02f8f56ddc63
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,22 +8,22 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: texture_pbr_v128
-    second: {fileID: 2800000, guid: 25a29acd473b2774db2a0bfe049becb3, type: 3}
+    second: {fileID: 2800000, guid: a22a2f6d6014c494aa73f58d01dfd190, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: texture_pbr_v128_metallic
-    second: {fileID: 2800000, guid: 1d99cd85df5805045a881f2fdf5ff2b2, type: 3}
+    second: {fileID: 2800000, guid: 5dbe19a8bc46dd642a608840e5bf84d6, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: texture_pbr_v128_normal
-    second: {fileID: 2800000, guid: 4a8f197481011ac4995ee7620484dccc, type: 3}
+    second: {fileID: 2800000, guid: d8f62648cfffee44d9919cd49ea58294, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: texture_pbr_v128_roughness
-    second: {fileID: 2800000, guid: 5a703d9d2f1c2c140975b9a6e58a8328, type: 3}
+    second: {fileID: 2800000, guid: cb884cde72e86194f955bc92122f7a3d, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
