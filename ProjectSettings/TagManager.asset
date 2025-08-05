@@ -8,6 +8,8 @@ TagManager:
   - Obstacle
   - Heart
   - Ground
+  - CinemachineTarget
+  - FinishLine
   layers:
   - Default
   - TransparentFX

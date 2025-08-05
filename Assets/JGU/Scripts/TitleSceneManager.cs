@@ -63,7 +63,7 @@ public class TitleSceneManager : MonoBehaviour
 
     private void ToggleCreditsPanel()
     {
-        settingsPanel.SetActive(false);
+        settingsPanel.SetActive(true);
         howToPlayPanel.SetActive(false);
         creditsPanel.SetActive(true);
     }

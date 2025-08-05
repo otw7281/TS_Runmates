@@ -22,7 +22,7 @@ public class PlayerHealth : MonoBehaviour
     public Vector3 respawnPosition = new Vector3(2.5f, 4f, -3f);
 
     [Header("UI 연결")]
-    public Slider healthSlider;
+    public Image healthImage;
     public Transform heartContainer;
     public GameObject heartImagePrefab;
 
@@ -36,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
         currentLives = maxLives;
 
         CreateInitialHearts();
-        UpdateHealthSlider();
+        UpdateHealthBar();
     }
 
     private void CreateInitialHearts()
@@ -48,11 +48,11 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    private void UpdateHealthSlider()
+    private void UpdateHealthBar()
     {
-        if (healthSlider != null)
+        if (healthImage != null)
         {
-            healthSlider.value = (float)currentHealth / maxHealth;
+            healthImage.fillAmount = (float)currentHealth / maxHealth;
         }
     }
 
@@ -85,7 +85,7 @@ public class PlayerHealth : MonoBehaviour
             currentHealth = maxHealth;
         }
 
-        UpdateHealthSlider();
+        UpdateHealthBar();
         StartCoroutine(InvincibilityCoroutine());
         Debug.Log($"피해! 체력: {currentHealth}, 목숨: {currentLives}");
     }
@@ -98,7 +98,7 @@ public class PlayerHealth : MonoBehaviour
         TakeLife();
 
         currentHealth = maxHealth;
-        UpdateHealthSlider();
+        UpdateHealthBar();
 
         Respawn();
 
