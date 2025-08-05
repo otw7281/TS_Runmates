@@ -30,9 +30,6 @@ public class TitleSceneManager : MonoBehaviour
     public AudioSource bgmSource;
     public AudioSource sfxSource;
 
-    [Header("Scene Settings")]
-    public string gameSceneName = "GameScene";
-
     private void Start()
     {
         InitializeUI();
@@ -81,7 +78,7 @@ public class TitleSceneManager : MonoBehaviour
     private void StartGame()
     {
         PlaySFX();
-        SceneManager.LoadScene(gameSceneName);
+        SceneManager.LoadScene(1);
     }
 
     private void LoadAudioSettings()
