@@ -2,19 +2,32 @@ using UnityEngine;
 
 public class JumpPad : MonoBehaviour
 {
-    public float jumpPower = 10f;
+    public float jumpHeight = 3f;       // 얼마나 높이 띄울지
+    public float launchDuration = 0.2f; // 이동 시간
 
     private void OnTriggerEnter(Collider other)
     {
-        // 플레이어가 점프대에 닿았을 때
-        PlayerMove player = other.GetComponent<PlayerMove>();
-        if (player != null)
+        // 조건: 이동 대상에 Capsule Collider가 있는지만 확인
+        if (other.GetComponent<CapsuleCollider>() != null)
         {
-            // 플레이어의 yVelocity를 바로 변경하여 점프시킴
-            player.SetJumpVelocity(jumpPower);
+            StartCoroutine(LaunchUpward(other.transform));
         }
     }
+    private System.Collections.IEnumerator LaunchUpward(Transform target)
+    {
+        Vector3 startPos = target.position;
+        Vector3 targetPos = startPos + new Vector3(0, jumpHeight, 0);
+        float elapsed = 0f;
 
+        while (elapsed < launchDuration)
+        {
+            target.position = Vector3.Lerp(startPos, targetPos, elapsed / launchDuration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        target.position = targetPos;
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
         {
