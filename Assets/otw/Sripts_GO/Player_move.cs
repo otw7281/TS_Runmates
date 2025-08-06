@@ -15,6 +15,8 @@ public class Player_move : MonoBehaviour
 
     CharacterController controller;    //변수 선언 : 빈그릇
 
+    public Animator anime; //애니메이터 컴포넌트
+
     public void SetJumpVelocity(float power)
     {
         yVelocity = power;
@@ -38,6 +40,9 @@ public class Player_move : MonoBehaviour
 
         //정규화 Normalize = 방향을 유지하면서 벡터의 길이를 1로 고정 
         dir.Normalize();
+
+        anime.SetFloat("BlendX", h); //BlendX에 h 값을 전달
+        anime.SetFloat("BlendY", v); //BlendY에 v 값을 전달
 
         dir = Camera.main.transform.TransformDirection(dir);
         dir.y = 0;
