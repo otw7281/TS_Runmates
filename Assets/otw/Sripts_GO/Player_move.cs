@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 //내가 지정한 방향으로 이동하고 싶다.
 //포지션의 값이 바뀐다.
-public class SimpleMove : MonoBehaviour
+public class Player_move : MonoBehaviour
 {
     // string : "내용" , int : 정수 (소수점 x )
     // float : 실수 (소수점o), Vector3 : 벡터 (x,y,z)

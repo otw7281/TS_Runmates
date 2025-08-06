@@ -626,6 +626,12 @@ MonoBehaviour:
   gameTime: 60
   timerText: {fileID: 4542775549072592044}
   gameOverPanel: {fileID: 5975016151772147508}
+  gameClearPanel: {fileID: 0}
+  restartButton: {fileID: 0}
+  homeButton: {fileID: 0}
+  goRestartButton: {fileID: 0}
+  goHomeButton: {fileID: 0}
+  heartContainer: {fileID: 0}
 --- !u!4 &536507735
 Transform:
   m_ObjectHideFlags: 0
