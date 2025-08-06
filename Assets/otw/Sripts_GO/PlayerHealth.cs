@@ -28,6 +28,8 @@ public class PlayerHealth : MonoBehaviour
 
     private List<GameObject> heartImages = new List<GameObject>();
 
+    public TimeAttack timeAttack;
+
     private void Start()
     {
         currentHealth = maxHealth;
@@ -58,10 +60,9 @@ public class PlayerHealth : MonoBehaviour
     private void Update()
     {
         // 낙사 체크
-        if (transform.position.y < fallThresholdY)
+        if (transform.position.y < fallThresholdY && !isInvincible)
         {
-            Respawn();
-            TakeLife();
+            FallDeath();
         }
     }
 
@@ -81,7 +82,6 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             TakeLife();
-            Respawn();
             currentHealth = maxHealth;
         }
 
@@ -90,6 +90,20 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log($"피해! 체력: {currentHealth}, 목숨: {currentLives}");
     }
 
+    // 떨어졌을 때(낙사)
+    private void FallDeath()
+    {
+        Debug.Log("낙사");
+
+        TakeLife();
+
+        currentHealth = maxHealth;
+        UpdateHealthSlider();
+
+        Respawn();
+
+        StartCoroutine(InvincibilityCoroutine());
+    }
 
     public void AddLife()
     {
@@ -122,27 +136,39 @@ public class PlayerHealth : MonoBehaviour
                 Destroy(lastHeart);
             }
 
+            Debug.Log($"목숨 하나 잃음. 남은 목숨: {currentLives}");
+
             if (currentLives <= 0)
             {
                 GameOver();
-            }
-            else
-            {
-                Debug.Log($"목숨 하나 잃음. 남은 목숨: {currentLives}");
             }
         }
     }
 
     private void Respawn()
     {
-        transform.position = respawnPosition;
-        Debug.Log("플레이어 리스폰됨");
+        CharacterController cc = GetComponent<CharacterController>();
+        if (cc != null)
+        {
+            cc.enabled = false;
+            transform.position = respawnPosition;
+            cc.enabled = true;
+        }
+        else
+        {
+            transform.position = respawnPosition;
+        }
+
+        Debug.Log($"리스폰 전 : {transform.position}");
+        Debug.Log($"리스폰 목표 : {respawnPosition}");
+        Debug.Log($"리스폰 후 : {transform.position}");
     }
 
     private void GameOver()
     {
         Debug.Log("게임 오버!");
         // 여기에 게임 종료 처리 추가 가능
+        timeAttack.ShowGameOver();
         Time.timeScale = 0f;
     }
 
