@@ -17,6 +17,8 @@ public class Player_move : MonoBehaviour
 
     public Animator anime; //애니메이터 컴포넌트
 
+    public float rotationSpeed = 10f; // 회전 속도
+
     public void SetJumpVelocity(float power)
     {
         yVelocity = power;
@@ -47,6 +49,13 @@ public class Player_move : MonoBehaviour
         dir = Camera.main.transform.TransformDirection(dir);
         dir.y = 0;
         dir.Normalize();
+
+        // 이동 입력이 있을 때 플레이어를 카메라 방향으로 회전
+        if (dir.magnitude > 0.1f)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(dir);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        }
 
         //(캐릭터 컨트롤러가) 바닥에 닿아있는게 맞냐?
         if (controller.collisionFlags == CollisionFlags.Below)
