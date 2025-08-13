@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class TimeAttack : MonoBehaviour
 {
+    public static TimeAttack Instance;
+
     [Header("Timer Setting")]
     public float gameTime = 30f;
 
@@ -16,6 +18,10 @@ public class TimeAttack : MonoBehaviour
     [Header("Game Clear Setting")]
     public Button restartButton;
     public Button homeButton;
+    public GameObject rankentryPrefab;
+    public Transform rankingContent;
+    public TextMeshProUGUI playerNameText;
+    public TextMeshProUGUI playerTimerText;
 
     [Header("Game Over Setting")]
     public Button goRestartButton;
@@ -26,6 +32,14 @@ public class TimeAttack : MonoBehaviour
     private float initialGameTime;
     private bool gameEnded = false;
 
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+    }
     private void Start()
     {
         initialGameTime = gameTime;
