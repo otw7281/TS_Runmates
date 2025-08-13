@@ -39,7 +39,6 @@ public class MovingObstacle : MonoBehaviour
         float direction = goingUp ? 1f : -1f;
         targetPosition = startPosition + new Vector3(0f, moveDistance * direction, 0f);
         // 다음 기준 위치를 새 기준으로 업데이트
-        startPosition = transform.position;
     }
 
     private void OnTriggerEnter(Collider other)
