@@ -1,49 +1,68 @@
 using UnityEngine;
 
-public class movingtrap : MonoBehaviour
+public class SideAttackObstacle : MonoBehaviour
 {
-    public float speed = 2f;              // 이동 속도
-    public float detectionRange = 10f;    // 감지 거리
-    public float damage = 10f;            // 충돌 시 피해 (디버그용)
+    [Header("움직임 설정")]
+    public float attackDistance = 2f;
+    public float attackSpeed = 5f;
+    public float returnSpeed = 2f;
 
-    private Transform player;
+    [Header("감지 범위 설정")]
+    public Vector3 detectionOffset = new Vector3(0f, 5f, 0f); // 기준 위치에서 앞
+    public Vector3 detectionSize = new Vector3(4f, 2f, 2f);   // 감지 박스 크기
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private Vector3 startPosition;
+    private Vector3 attackPosition;
+    private bool isAttacking = false;
+    private bool isReturning = false;
+
+    private void Start()
     {
-        // 플레이어가 존재하면 방향 계산
-        if (player == null)
+        startPosition = transform.position;
+        attackPosition = startPosition + Vector3.forward * attackDistance;
+    }
+
+    private void Update()
+    {
+        // 플레이어 감지 (공격 중/복귀 중 아닐 때만)
+        if (!isAttacking && !isReturning)
         {
-            GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
-            if (playerObj != null)
-                player = playerObj.transform;
+            Vector3 center = transform.position + detectionOffset;
+            Collider[] hits = Physics.OverlapBox(center, detectionSize * 0.5f, Quaternion.identity);
+
+            foreach (Collider hit in hits)
+            {
+                if (hit.CompareTag("Player"))
+                {
+                    PlayerHealth player = hit.GetComponent<PlayerHealth>();
+                    if (player != null)
+                        
+
+                    isAttacking = true;
+                    break;
+                }
+            }
         }
 
-        if (player == null) return;
-
-        Vector3 directionToPlayer = player.position - transform.position;
-
-        // Z축 방향으로만 따라가게 제한
-        directionToPlayer = new Vector3(0, 0, directionToPlayer.z);
-
-        if (Mathf.Abs(directionToPlayer.z) < detectionRange)
+        // 이동 처리
+        if (isAttacking)
         {
-            // 정규화 후 이동
-            transform.position += directionToPlayer.normalized * speed * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(transform.position, attackPosition, attackSpeed * Time.deltaTime);
+            if (Vector3.Distance(transform.position, attackPosition) < 0.01f)
+            {
+                isAttacking = false;
+                isReturning = true;
+            }
+        }
+        else if (isReturning)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, startPosition, returnSpeed * Time.deltaTime);
+            if (Vector3.Distance(transform.position, startPosition) < 0.01f)
+            {
+                isReturning = false;
+            }
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            // 여기서 체력 시스템에 피해를 줄 수 있음
-            Debug.Log("플레이어에게 피해를 입혔습니다: " + damage);
-        }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
