@@ -21,7 +21,7 @@ public class TitleManager : MonoBehaviour
     public TextMeshProUGUI warningText;
 
     public GameObject warningPanel;
-    public GameObject nameInputPanel;
+    public Button closeWarningPanel;
 
     [Header("Settings Panel")]
     public Slider bgmSlider;
@@ -56,6 +56,7 @@ public class TitleManager : MonoBehaviour
         closeSettingsButton.onClick.AddListener(CloseSettingsPanel);
         closeHowToPlayButton.onClick.AddListener(CloseHowToPlayPanel);
         closeCreditsButton.onClick.AddListener(CloseCreditsPanel);
+        closeWarningPanel.onClick.AddListener(CloseWarningPanel);
 
         // 슬라이더 이벤트 등록
         bgmSlider.onValueChanged.AddListener(SetBGMVolume);
@@ -93,7 +94,6 @@ public class TitleManager : MonoBehaviour
         {
             warningText.text = "이름을 입력하세요.";
             warningPanel.SetActive(true);
-            nameInputPanel.SetActive(false);
             return;
         }
 
@@ -102,9 +102,11 @@ public class TitleManager : MonoBehaviour
         {
             warningText.text = "이름은 한글 또는 영어만, \n1-8자까지 가능합니다!";
             warningPanel.SetActive(true);
-            nameInputPanel.SetActive(false);
             return;
         }
+
+        if (GameData.Instance != null)
+            GameData.Instance.PlayerName = input;
 
         PlaySFX();
         SceneManager.LoadScene(1);
@@ -166,5 +168,10 @@ public class TitleManager : MonoBehaviour
     private void CloseCreditsPanel()
     {
         creditsPanel.SetActive(false);
+    }
+
+    private void CloseWarningPanel()
+    {
+        warningPanel.SetActive(false);
     }
 }

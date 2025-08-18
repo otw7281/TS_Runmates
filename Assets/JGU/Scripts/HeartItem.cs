@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class HeartItem : MonoBehaviour
 {
-    [Header("Item Setting")]
-    public float lifeTime = 10f;
 
     [Header("하트 애니메이션 설정")]
     public float floatAmplitude = 0.3f;
@@ -13,10 +11,9 @@ public class HeartItem : MonoBehaviour
 
     [Header("아이템 효과")]
     public AudioClip collectSFX;
-    public ParticleSystem collectEffect;
+    public GameObject collectEffect;
 
     private Vector3 startPosition;
-    private float currentLifeTime = 0f;
     private Vector3 originalScale;
     private AudioSource audioSource;
 
@@ -32,14 +29,6 @@ public class HeartItem : MonoBehaviour
 
     private void Update()
     {
-        currentLifeTime += Time.deltaTime;
-
-        // 수명이 다하면 사라짐
-        if(currentLifeTime >= lifeTime)
-        {
-            Destroy(gameObject);
-            return;
-        }
 
         float newY = startPosition.y + Mathf.Sin(Time.time * floatSpeed) * floatAmplitude;
         transform.position = new Vector3(transform.position.x, newY, transform.position.z);
@@ -67,13 +56,13 @@ public class HeartItem : MonoBehaviour
             Debug.Log("하트 수집! 목숨 회복");
         }
 
-        if (collectSFX != null && audioSource != null)
+        if (collectSFX != null)
             AudioSource.PlayClipAtPoint(collectSFX, transform.position);
 
         if (collectEffect != null)
         {
-            ParticleSystem effect = Instantiate(collectEffect, transform.position, Quaternion.identity);
-            Destroy(effect.gameObject, 2f);
+            GameObject effect = Instantiate(collectEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 1f);
         }
 
         Destroy(gameObject);

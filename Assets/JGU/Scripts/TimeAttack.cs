@@ -120,13 +120,35 @@ public class TimeAttack : MonoBehaviour
         int clearSeconds = Mathf.FloorToInt(clearTime % 60);
         int clearMilliseconds = Mathf.FloorToInt((clearTime % 1) * 100);
 
+        if (GameData.Instance != null)
+            GameData.Instance.SaveGameResult(true, clearTime);
+
         heartContainer.SetActive(false);
 
         if (gameClearPanel != null)
         {
             gameClearPanel.SetActive(true);
+            UpdateRankingUI();
         }
         Debug.Log("GameClear");
+    }
+
+    private void UpdateRankingUI()
+    {
+        if (rankingContent == null || rankentryPrefab == null) return;
+
+        foreach(Transform child in rankingContent)
+        {
+            Destroy(child.gameObject);
+        }
+
+        var rankingList = GameData.Instance.GetRankingList();
+        for (int i = 0; i < rankingList.Count; i++)
+        {
+            var entryObj = Instantiate(rankentryPrefab, rankingContent);
+            var entryUI = entryObj.GetComponent<RankEntry_UI>();
+            entryUI.SetEntry(i + 1, rankingList[i].Item1, rankingList[i].Item2);
+        }
     }
 
     private void RestartGame()

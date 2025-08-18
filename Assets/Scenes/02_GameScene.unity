@@ -396,6 +396,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -1390,6 +1398,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -1404,7 +1420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -66
+      value: -70.49
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1723,6 +1739,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -2310,6 +2334,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -2324,11 +2356,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -51.6
+      value: -55.22
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.58
+      value: 7.84
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2388,6 +2420,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -3064,6 +3104,10 @@ MonoBehaviour:
   gameClearPanel: {fileID: 3952063818147317048}
   restartButton: {fileID: 6425876737319671790}
   homeButton: {fileID: 6374594823214801408}
+  rankentryPrefab: {fileID: 0}
+  rankingContent: {fileID: 0}
+  playerNameText: {fileID: 0}
+  playerTimerText: {fileID: 0}
   goRestartButton: {fileID: 6704778265004340272}
   goHomeButton: {fileID: 2719852069284924442}
   heartContainer: {fileID: 2867551998898942575}
@@ -3082,84 +3126,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &417013039
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2126242404}
-    m_Modifications:
-    - target: {fileID: 801944629647392277, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_Name
-      value: CoinItem (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: coinText
-      value: 
-      objectReference: {fileID: 6630558832500804281}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -38.79
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.68
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 54.46
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
---- !u!4 &417013040 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-  m_PrefabInstance: {fileID: 417013039}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &418548636
 GameObject:
   m_ObjectHideFlags: 0
@@ -3466,6 +3432,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -4091,6 +4065,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -4169,6 +4151,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -5227,6 +5217,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1122404117}
     m_Modifications:
+    - target: {fileID: 2533218788027882572, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
+      propertyPath: collectSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 2533218788027882572, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
+      propertyPath: collectEffect
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: b368b89c9bb80fc4e9a7e535ce92c4ed, type: 3}
     - target: {fileID: 4547966985393727043, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -31.83
@@ -5799,6 +5797,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -5877,6 +5883,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -5891,11 +5905,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -41.13
+      value: -39.99
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.17
+      value: 5.83
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5955,6 +5969,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -5969,11 +5991,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -87.36
+      value: -85.7
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.5
+      value: 6.49
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6236,6 +6258,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -6258,7 +6288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 54.46
+      value: 53.27
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6442,6 +6472,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -6830,84 +6868,6 @@ Transform:
   - {fileID: 2001664435}
   m_Father: {fileID: 351012233}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &932406769
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2126242404}
-    m_Modifications:
-    - target: {fileID: 801944629647392277, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_Name
-      value: CoinItem (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: coinText
-      value: 
-      objectReference: {fileID: 6630558832500804281}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -35.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 52.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
---- !u!4 &932406770 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-  m_PrefabInstance: {fileID: 932406769}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &938023653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 941644813231066131, guid: f9028a1015685ce4795e21831f327fb9, type: 3}
@@ -6929,6 +6889,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -7485,6 +7453,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -7499,7 +7475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -62.65
+      value: -64.26
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7684,84 +7660,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 941644813231066131, guid: f9028a1015685ce4795e21831f327fb9, type: 3}
   m_PrefabInstance: {fileID: 1530414454}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1036006439
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2126242404}
-    m_Modifications:
-    - target: {fileID: 801944629647392277, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_Name
-      value: CoinItem (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: coinText
-      value: 
-      objectReference: {fileID: 6630558832500804281}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -25.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 21.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
---- !u!4 &1036006440 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
-  m_PrefabInstance: {fileID: 1036006439}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1040554024
 GameObject:
   m_ObjectHideFlags: 0
@@ -7905,7 +7803,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064597531}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -8189,6 +8087,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -8516,6 +8422,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -8663,6 +8577,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -8677,11 +8599,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -69.4
+      value: -77.87
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.4
+      value: 8.84
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9076,6 +8998,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -9154,6 +9084,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -9224,6 +9162,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1122404117}
     m_Modifications:
+    - target: {fileID: 2533218788027882572, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
+      propertyPath: collectSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 2533218788027882572, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
+      propertyPath: collectEffect
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: b368b89c9bb80fc4e9a7e535ce92c4ed, type: 3}
     - target: {fileID: 4547966985393727043, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -27.67
@@ -10041,6 +9987,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -10151,6 +10105,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -10165,11 +10127,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -35.87
+      value: -31.21
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.47
+      value: 4.93
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10547,6 +10509,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -10625,6 +10595,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -10876,6 +10854,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -11371,6 +11357,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -12813,6 +12807,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -12827,11 +12829,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -68.65
+      value: -68.13
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.48
+      value: 8.76
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13593,6 +13595,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1122404117}
     m_Modifications:
+    - target: {fileID: 2533218788027882572, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
+      propertyPath: collectSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 2533218788027882572, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
+      propertyPath: collectEffect
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: b368b89c9bb80fc4e9a7e535ce92c4ed, type: 3}
     - target: {fileID: 4547966985393727043, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -91.72
@@ -13717,6 +13727,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1122404117}
     m_Modifications:
+    - target: {fileID: 2533218788027882572, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
+      propertyPath: collectSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 2533218788027882572, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
+      propertyPath: collectEffect
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: b368b89c9bb80fc4e9a7e535ce92c4ed, type: 3}
     - target: {fileID: 4547966985393727043, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.56
@@ -13952,6 +13970,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -14215,6 +14241,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -14237,7 +14271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 48.82
+      value: 46.77
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14565,6 +14599,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -15454,6 +15496,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -15468,7 +15518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -59.67
+      value: -65.38
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16149,6 +16199,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1122404117}
     m_Modifications:
+    - target: {fileID: 2533218788027882572, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
+      propertyPath: collectSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 2533218788027882572, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
+      propertyPath: collectEffect
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: b368b89c9bb80fc4e9a7e535ce92c4ed, type: 3}
     - target: {fileID: 4547966985393727043, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -85.5
@@ -16349,6 +16407,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -16427,6 +16493,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -16441,11 +16515,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -55.34
+      value: -59.4
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.58
+      value: 6.86
       objectReference: {fileID: 0}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16760,6 +16834,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -17012,6 +17094,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1122404117}
     m_Modifications:
+    - target: {fileID: 2533218788027882572, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
+      propertyPath: collectSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 2533218788027882572, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
+      propertyPath: collectEffect
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: b368b89c9bb80fc4e9a7e535ce92c4ed, type: 3}
     - target: {fileID: 4547966985393727043, guid: 818bab29956c81942ab7bd38319363bf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -91.03
@@ -17148,6 +17238,14 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 6630558832500804281}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: EffectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8554f5d9ea2b5244da7c473db0bf2c7b, type: 3}
+    - target: {fileID: 3977522929691260616, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
+      propertyPath: HeartEffectPrefab
+      value: 
+      objectReference: {fileID: 203041836690465964, guid: 73d56ece02a0d564185507a3fda8bf34, type: 3}
     - target: {fileID: 8282396088720545671, guid: 9de317acdebec3f46a4cabdd789b268f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -17363,7 +17461,6 @@ Transform:
   - {fileID: 1160173798}
   - {fileID: 519922212}
   - {fileID: 830234729}
-  - {fileID: 1036006440}
   - {fileID: 319420890}
   - {fileID: 1308383823}
   - {fileID: 1319650069}
@@ -17371,9 +17468,7 @@ Transform:
   - {fileID: 1751566762}
   - {fileID: 1265174473}
   - {fileID: 1787493916}
-  - {fileID: 932406770}
   - {fileID: 798104726}
-  - {fileID: 417013040}
   - {fileID: 734970194}
   - {fileID: 729181668}
   - {fileID: 2002257102}

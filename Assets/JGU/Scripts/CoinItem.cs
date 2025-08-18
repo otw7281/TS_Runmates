@@ -3,39 +3,36 @@ using UnityEngine;
 
 public class CoinItem : MonoBehaviour
 {
-    [Header("코인 애니메이션 설정")]
-    public float rotationSpeed = 180f;
-    public float floatAmplitude = 0.5f;
-    public float floatSpeed = 2f;
+    public GameObject HeartEffectPrefab;
+    public AudioClip EffectSound;
 
-    [Header("아이템 효과")]
-    public AudioClip collectSFX;
-    public ParticleSystem collectEffect;
+    private float rotationSpeed;
+    private Vector3 startPosition;
+    private float floatSpeed;
+    private float floatHeight;
+    private float floatOffset;
 
     public TextMeshProUGUI coinText;
     public static int coinCount = 0;
 
-    private Vector3 startPosition;
-    private float bobOffset;
     private AudioSource audioSource;
 
     private void Start()
     {
+        rotationSpeed = Random.Range(30f, 90f);
+
         startPosition = transform.position;
-
-        bobOffset = Random.Range(0f, Mathf.PI * 2f);
-
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource == null )
-            audioSource = gameObject.AddComponent<AudioSource>();
+        floatSpeed = Random.Range(1f, 2f);
+        floatHeight = Random.Range(0.1f, 0.25f);
+        floatOffset = Random.Range(0f, 2f * Mathf.PI);
     }
 
     private void Update()
     {
-        transform.Rotate(0, rotationSpeed * Time.deltaTime, 0);
+        transform.Rotate(Vector3.up * (rotationSpeed * Time.deltaTime), Space.World);
 
-        float newY = startPosition.y + Mathf.Sin(Time.time * floatSpeed + bobOffset) * floatAmplitude;
-        transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+        float yOffset = Mathf.Sin(Time.time * floatSpeed + floatOffset) * floatHeight;
+        transform.position = startPosition + new Vector3(0, yOffset, 0);
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -54,13 +51,15 @@ public class CoinItem : MonoBehaviour
             coinText.text = "Coin: " + coinCount;
         }
 
-        if (collectSFX != null && audioSource != null)
-            AudioSource.PlayClipAtPoint(collectSFX, transform.position);
-
-        if (collectEffect != null)
+        if (HeartEffectPrefab != null)
         {
-            ParticleSystem effect = Instantiate(collectEffect, transform.position, Quaternion.identity);
-            Destroy(effect.gameObject, 2f);
+            GameObject effect = Instantiate(HeartEffectPrefab, transform.position, Quaternion.identity);
+            Destroy(effect, 1f);
+        }
+
+        if (EffectSound != null)
+        {
+            AudioSource.PlayClipAtPoint(EffectSound, transform.position);
         }
 
         Destroy(gameObject);
