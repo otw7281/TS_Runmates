@@ -13,15 +13,6 @@ public class TimeAttack : MonoBehaviour
     [Header("UI References")]
     public TextMeshProUGUI timerText;
     public GameObject gameOverPanel;
-    public GameObject gameClearPanel;
-
-    [Header("Game Clear Setting")]
-    public Button restartButton;
-    public Button homeButton;
-    public GameObject rankentryPrefab;
-    public Transform rankingContent;
-    public TextMeshProUGUI playerNameText;
-    public TextMeshProUGUI playerTimerText;
 
     [Header("Game Over Setting")]
     public Button goRestartButton;
@@ -30,7 +21,8 @@ public class TimeAttack : MonoBehaviour
     public GameObject heartContainer;
 
     private float initialGameTime;
-    private bool gameEnded = false;
+    private bool gameEnded;
+    public float elapsedTime;
 
 
     private void Awake()
@@ -45,8 +37,6 @@ public class TimeAttack : MonoBehaviour
         initialGameTime = gameTime;
 
         // 버튼 이벤트 등록
-        restartButton.onClick.AddListener(RestartGame);
-        homeButton.onClick.AddListener(GoHome);
         goRestartButton.onClick.AddListener(RestartGame);
         goHomeButton.onClick.AddListener(GoHome);
     }
@@ -98,7 +88,6 @@ public class TimeAttack : MonoBehaviour
 
         if (gameOverPanel != null)
         {
-            
             gameOverPanel.SetActive(true);
         }
 
@@ -111,45 +100,16 @@ public class TimeAttack : MonoBehaviour
 
         gameEnded = true;
 
-        // 게임 정지
-        Time.timeScale = 0f;
-
-        // 클리어 시간 계산 및 표시
-        float clearTime = initialGameTime - gameTime;
-        int clearMinutes = Mathf.FloorToInt(clearTime / 60);
-        int clearSeconds = Mathf.FloorToInt(clearTime % 60);
-        int clearMilliseconds = Mathf.FloorToInt((clearTime % 1) * 100);
-
         if (GameData.Instance != null)
-            GameData.Instance.SaveGameResult(true, clearTime);
+            GameData.Instance.SaveGameResult(true, elapsedTime);
 
-        heartContainer.SetActive(false);
+        Time.timeScale = 1f;
 
-        if (gameClearPanel != null)
-        {
-            gameClearPanel.SetActive(true);
-            UpdateRankingUI();
-        }
+        SceneManager.LoadScene(2);
+
         Debug.Log("GameClear");
     }
 
-    private void UpdateRankingUI()
-    {
-        if (rankingContent == null || rankentryPrefab == null) return;
-
-        foreach(Transform child in rankingContent)
-        {
-            Destroy(child.gameObject);
-        }
-
-        var rankingList = GameData.Instance.GetRankingList();
-        for (int i = 0; i < rankingList.Count; i++)
-        {
-            var entryObj = Instantiate(rankentryPrefab, rankingContent);
-            var entryUI = entryObj.GetComponent<RankEntry_UI>();
-            entryUI.SetEntry(i + 1, rankingList[i].Item1, rankingList[i].Item2);
-        }
-    }
 
     private void RestartGame()
     {

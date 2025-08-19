@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/02_GameScene.unity
     guid: dfadb6ba42276634a82a1d208cd2762f
+  - enabled: 1
+    path: Assets/Scenes/03_GameClear.unity
+    guid: fda1b6f723ebb3c43bdea2a514c3fc3b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

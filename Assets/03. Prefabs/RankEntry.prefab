@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ef60f5f5a7c2f2d489e99cbc4de5e466, type: 2}
-  m_sharedMaterial: {fileID: 855364073158874563, guid: ef60f5f5a7c2f2d489e99cbc4de5e466, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 6719808608657512597}
   - component: {fileID: 5365055258241282393}
   - component: {fileID: 5922818889940688517}
-  - component: {fileID: 1005153213024544667}
+  - component: {fileID: 5543555263691947906}
   m_Layer: 5
   m_Name: RankEntry
   m_TagString: Untagged
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
---- !u!114 &1005153213024544667
+--- !u!114 &5543555263691947906
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2281078642363200646}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be57332319a7a71418e8bfc7a5dcdab8, type: 3}
+  m_Script: {fileID: 11500000, guid: 19dcef4a47ff64841a843a480da4c5c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rankText: {fileID: 4349545738957842827}
@@ -321,8 +321,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ef60f5f5a7c2f2d489e99cbc4de5e466, type: 2}
-  m_sharedMaterial: {fileID: 855364073158874563, guid: ef60f5f5a7c2f2d489e99cbc4de5e466, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -478,8 +478,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ef60f5f5a7c2f2d489e99cbc4de5e466, type: 2}
-  m_sharedMaterial: {fileID: 855364073158874563, guid: ef60f5f5a7c2f2d489e99cbc4de5e466, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
