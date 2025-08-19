@@ -67,6 +67,7 @@ public class Player_move : MonoBehaviour
         //바닥에 닿아있는게 맞고, 점프키를 누른게 맞다면,
         if (isGrounded == true && Input.GetButtonDown("Jump"))
         {
+            anime.SetTrigger("isJump");
             yVelocity = jumpPower;
             isGrounded = false;
         }
