@@ -18,11 +18,17 @@ public class TimeAttack : MonoBehaviour
     public Button goRestartButton;
     public Button goHomeButton;
 
+    [Header("Coin Bonus")]
+    public int totalCoins = 30;
+    public float coinBonusSeconds = 10f;
+
     public GameObject heartContainer;
 
     private float initialGameTime;
     private bool gameEnded;
     public float elapsedTime;
+    private int currentCoins = 0;
+    private bool bonusApplied = false;
 
 
     private void Awake()
@@ -46,6 +52,7 @@ public class TimeAttack : MonoBehaviour
         if (!gameEnded)
         {
             gameTime -= Time.deltaTime;
+            elapsedTime += Time.deltaTime;
 
             int mintues = Mathf.FloorToInt(gameTime / 60);
             int seconds = Mathf.FloorToInt(gameTime % 60);
@@ -68,12 +75,25 @@ public class TimeAttack : MonoBehaviour
 
     private void UpdateTimerColor()
     {
-        if (gameTime <= 5f)
+        if (gameTime <= 30f)
         {
             timerText.color = Color.red;
         }
     }
 
+    public void AddCoin()
+    {
+        currentCoins++;
+
+        if (currentCoins >= totalCoins && !bonusApplied)
+            ApplyCoinBonus();
+    }
+
+    private void ApplyCoinBonus()
+    {
+        bonusApplied = true;
+        gameTime += coinBonusSeconds;
+    }
     public void ShowGameOver()
     {
         if (gameEnded) return;
@@ -99,6 +119,10 @@ public class TimeAttack : MonoBehaviour
         if (gameEnded) return;
 
         gameEnded = true;
+
+        float finalTime = elapsedTime;
+        if (bonusApplied)
+            finalTime += coinBonusSeconds;
 
         if (GameData.Instance != null)
             GameData.Instance.SaveGameResult(true, elapsedTime);
@@ -136,5 +160,15 @@ public class TimeAttack : MonoBehaviour
     public bool IsGameEnded()
     {
         return gameEnded;
+    }
+
+    public int GetCurrentCoins()
+    {
+        return currentCoins;
+    }
+
+    public bool IsBonusApplied()
+    {
+        return bonusApplied;
     }
 }
