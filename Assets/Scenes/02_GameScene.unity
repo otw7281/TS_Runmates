@@ -3179,8 +3179,11 @@ MonoBehaviour:
   gameOverPanel: {fileID: 6950563914678437980}
   goRestartButton: {fileID: 6704778265004340272}
   goHomeButton: {fileID: 2719852069284924442}
+  totalCoins: 30
+  coinBonusSeconds: 10
   heartContainer: {fileID: 2867551998898942575}
   elapsedTime: 0
+  coinText: {fileID: 6630558832500804281}
 --- !u!4 &399670614
 Transform:
   m_ObjectHideFlags: 0
@@ -18350,8 +18353,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -200, y: -60}
-  m_SizeDelta: {x: 300, y: 100}
+  m_AnchoredPosition: {x: -210, y: -60}
+  m_SizeDelta: {x: 450, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &799545647501613609
 GameObject:
@@ -20595,7 +20598,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Coin: '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cc2944d3efe1ed40bdde1fc8f3fd6a4, type: 2}
   m_sharedMaterial: {fileID: 2362412677141506142, guid: 5cc2944d3efe1ed40bdde1fc8f3fd6a4, type: 2}
@@ -20622,7 +20625,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

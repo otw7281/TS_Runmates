@@ -30,6 +30,7 @@ public class TimeAttack : MonoBehaviour
     private int currentCoins = 0;
     private bool bonusApplied = false;
 
+    public TextMeshProUGUI coinText;
 
     private void Awake()
     {
@@ -41,10 +42,14 @@ public class TimeAttack : MonoBehaviour
     private void Start()
     {
         initialGameTime = gameTime;
+        currentCoins = 0;
+        bonusApplied = false;
 
         // 버튼 이벤트 등록
         goRestartButton.onClick.AddListener(RestartGame);
         goHomeButton.onClick.AddListener(GoHome);
+
+        UpdateCoinUI();
     }
 
     private void Update()
@@ -85,8 +90,16 @@ public class TimeAttack : MonoBehaviour
     {
         currentCoins++;
 
+        UpdateCoinUI();
+
         if (currentCoins >= totalCoins && !bonusApplied)
             ApplyCoinBonus();
+    }
+
+    private void UpdateCoinUI()
+    {
+        if (coinText != null)
+            coinText.text = "Coin : " + currentCoins + "/30";
     }
 
     private void ApplyCoinBonus()

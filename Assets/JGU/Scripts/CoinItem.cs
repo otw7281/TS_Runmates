@@ -12,9 +12,6 @@ public class CoinItem : MonoBehaviour
     private float floatHeight;
     private float floatOffset;
 
-    public TextMeshProUGUI coinText;
-    public static int coinCount = 0;
-
     private AudioSource audioSource;
 
     private void Start()
@@ -44,12 +41,8 @@ public class CoinItem : MonoBehaviour
 
     private void CollectItem(GameObject player)
     {
-        coinCount++;
-
-        if (coinText != null)
-        {
-            coinText.text = "Coin: " + coinCount;
-        }
+        if (TimeAttack.Instance != null)
+            TimeAttack.Instance.AddCoin();
 
         if (HeartEffectPrefab != null)
         {
