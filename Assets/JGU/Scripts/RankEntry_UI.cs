@@ -27,7 +27,8 @@ public class RankEntry_UI : MonoBehaviour
         }
         else
         {
-            rankText.color = Color.white;
+            rankText.color = Color.black;
         }
+
     }
 }
