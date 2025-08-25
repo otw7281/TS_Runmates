@@ -13,6 +13,7 @@ public class CoinItem : MonoBehaviour
     private float floatOffset;
 
     private AudioSource audioSource;
+    private GameAudioManager audioManager;
 
     private void Start()
     {
@@ -22,6 +23,8 @@ public class CoinItem : MonoBehaviour
         floatSpeed = Random.Range(1f, 2f);
         floatHeight = Random.Range(0.1f, 0.25f);
         floatOffset = Random.Range(0f, 2f * Mathf.PI);
+
+        audioManager = FindAnyObjectByType<GameAudioManager>();
     }
 
     private void Update()
@@ -52,7 +55,15 @@ public class CoinItem : MonoBehaviour
 
         if (EffectSound != null)
         {
-            AudioSource.PlayClipAtPoint(EffectSound, transform.position);
+            if (audioManager != null)
+            {
+                audioManager.PlaySFXAtPoint(EffectSound, transform.position);
+            }
+            else
+            {
+                float sfxVolume = PlayerPrefs.GetFloat("SFXVolume", 0.7f);
+                AudioSource.PlayClipAtPoint(EffectSound, transform.position, sfxVolume);
+            }
         }
 
         Destroy(gameObject);

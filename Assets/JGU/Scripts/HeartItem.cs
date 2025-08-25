@@ -17,14 +17,13 @@ public class HeartItem : MonoBehaviour
     private Vector3 originalScale;
     private AudioSource audioSource;
 
+    private GameAudioManager audioManager;
     private void Start()
     {
         startPosition = transform.position;
         originalScale = transform.localScale;
 
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource == null)
-            audioSource = gameObject.AddComponent<AudioSource>();
+        audioManager = FindAnyObjectByType<GameAudioManager>();
     }
 
     private void Update()
@@ -57,7 +56,17 @@ public class HeartItem : MonoBehaviour
         }
 
         if (collectSFX != null)
-            AudioSource.PlayClipAtPoint(collectSFX, transform.position);
+        {
+            if (audioManager != null)
+            {
+                audioManager.PlaySFXAtPoint(collectSFX, transform.position);
+            }
+            else
+            {
+                float sfxVolume = PlayerPrefs.GetFloat("SFXVolume", 0.7f);
+                AudioSource.PlayClipAtPoint(collectSFX, transform.position, sfxVolume);
+            }
+        }
 
         if (collectEffect != null)
         {

@@ -2,13 +2,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class TimeAttack : MonoBehaviour
 {
     public static TimeAttack Instance;
 
     [Header("Timer Setting")]
-    public float gameTime = 30f;
+    public float gameTime = 120f;
 
     [Header("UI References")]
     public TextMeshProUGUI timerText;
@@ -17,10 +18,11 @@ public class TimeAttack : MonoBehaviour
     [Header("Game Over Setting")]
     public Button goRestartButton;
     public Button goHomeButton;
+    public Button goQuitButton;
 
     [Header("Coin Bonus")]
-    public int totalCoins = 30;
-    public float coinBonusSeconds = 10f;
+    public int totalCoins = 35;
+    public float perfectClearBonus = 10f;
 
     public GameObject heartContainer;
 
@@ -28,7 +30,10 @@ public class TimeAttack : MonoBehaviour
     private bool gameEnded;
     public float elapsedTime;
     private int currentCoins = 0;
-    private bool bonusApplied = false;
+    private bool isPerfectClear = false;
+
+    [Header("Perfect Clear UI")]
+    public GameObject perfectClearPanel;
 
     public TextMeshProUGUI coinText;
 
@@ -43,11 +48,12 @@ public class TimeAttack : MonoBehaviour
     {
         initialGameTime = gameTime;
         currentCoins = 0;
-        bonusApplied = false;
+        isPerfectClear = false;
 
         // 버튼 이벤트 등록
         goRestartButton.onClick.AddListener(RestartGame);
         goHomeButton.onClick.AddListener(GoHome);
+        goQuitButton.onClick.AddListener(GoQuit);
 
         UpdateCoinUI();
     }
@@ -92,21 +98,48 @@ public class TimeAttack : MonoBehaviour
 
         UpdateCoinUI();
 
-        if (currentCoins >= totalCoins && !bonusApplied)
-            ApplyCoinBonus();
+        if (currentCoins >= totalCoins && !isPerfectClear)
+        {
+            isPerfectClear = true;
+            ShowPerfectClearPanel();
+        }
+    }
+
+    private void ShowPerfectClearPanel()
+    {
+        if (perfectClearPanel != null)
+        {
+            perfectClearPanel.SetActive(true);
+        }
+
+        StartCoroutine(HidePerfectClearPanel());
+    }
+
+    private IEnumerator HidePerfectClearPanel()
+    {
+        yield return new WaitForSeconds(1f);
+
+        if (perfectClearPanel != null)
+        {
+            perfectClearPanel.SetActive(false);
+        }
     }
 
     private void UpdateCoinUI()
     {
         if (coinText != null)
-            coinText.text = "Coin : " + currentCoins + "/30";
+            coinText.text = "Coin : " + currentCoins + "/" + totalCoins;
+
+        if (isPerfectClear)
+        {
+            coinText.color = Color.yellow;
+        }
+        else
+        {
+            coinText.color = Color.white;
+        }
     }
 
-    private void ApplyCoinBonus()
-    {
-        bonusApplied = true;
-        gameTime += coinBonusSeconds;
-    }
     public void ShowGameOver()
     {
         if (gameEnded) return;
@@ -134,11 +167,15 @@ public class TimeAttack : MonoBehaviour
         gameEnded = true;
 
         float finalTime = elapsedTime;
-        if (bonusApplied)
-            finalTime += coinBonusSeconds;
+
+        if (isPerfectClear)
+        {
+            finalTime -= perfectClearBonus;
+            finalTime = Mathf.Max(finalTime, 0.1f);
+        }
 
         if (GameData.Instance != null)
-            GameData.Instance.SaveGameResult(true, elapsedTime);
+            GameData.Instance.SaveGameResult(true, finalTime);
 
         Time.timeScale = 1f;
 
@@ -158,6 +195,11 @@ public class TimeAttack : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
+    }
+
+    private void GoQuit()
+    {
+        Application.Quit();
     }
 
     public void TriggerGameClear()
@@ -180,8 +222,8 @@ public class TimeAttack : MonoBehaviour
         return currentCoins;
     }
 
-    public bool IsBonusApplied()
+    public bool IsPerfectClear()
     {
-        return bonusApplied;
+        return isPerfectClear;
     }
 }

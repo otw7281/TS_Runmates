@@ -28,7 +28,6 @@ public class GameData : MonoBehaviour
     public void SaveGameResult(bool isClear, float time)
     {
         isGameClear = isClear;
-        ClearTime = time;
 
         if (isClear)
         {
