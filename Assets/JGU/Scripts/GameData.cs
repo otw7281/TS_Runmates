@@ -28,6 +28,7 @@ public class GameData : MonoBehaviour
     public void SaveGameResult(bool isClear, float time)
     {
         isGameClear = isClear;
+        ClearTime = time;
 
         if (isClear)
         {
@@ -37,6 +38,8 @@ public class GameData : MonoBehaviour
 
     private void SaveRanking(string name, float time)
     {
+        Debug.Log($"SaveRanking 호출 : {name}, {time:F2}초");
+
         LoadRanking();
 
         rankingList.Add((name, time));
@@ -46,13 +49,17 @@ public class GameData : MonoBehaviour
         {
             PlayerPrefs.SetString($"RankName_{i}", rankingList[i].Item1);
             PlayerPrefs.SetFloat($"RankTime_{i}", rankingList[i].Item2);
+
+            Debug.Log($"PlayerPrefs 저장 {i}: {rankingList[i].Item1}, {rankingList[i].Item2:F2}");
         }
 
         PlayerPrefs.Save();
+        Debug.Log("PlayerPrefs.Save() 완료");
     }
 
     private void LoadRanking()
     {
+        Debug.Log("LoadRanking 호출");
         rankingList.Clear();
 
         for(int i = 0; i < 5; i++)
